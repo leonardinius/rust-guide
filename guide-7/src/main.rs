@@ -3,16 +3,7 @@
 //! Example:
 //!
 //! ```rust
-//! extern crate sha1;
-//! # fn main() {
-//!
-//! let mut m = sha1::Sha1::new();
-//! m.update("Hello World!".as_bytes());
-//! assert_eq!(m.hexdigest().as_slice(),
-//!            "2ef7bde608ce5404e97d5f042f95f89f1c232871");
-//! # }
 //! ```
-
 
 /// `factorial` is  a function that returns a n! from n
 ///
@@ -21,10 +12,11 @@
 /// * `n` - The non-negative number to calculate the factorial to
 ///
 /// # Example 
-///
-/// ```rust
+/// ```
+/// // example
 /// let n: u64 = 5u64;
-/// println!("{}! = {}", n, factorial(n)); // prints "5! = 120"
+/// let result: u64 = hello_world::factorial(n);
+/// println!("{}! = {}", n, result); // prints "5! = 120"
 /// ```
 pub fn factorial(n : u64) -> u64 {
     match n {
