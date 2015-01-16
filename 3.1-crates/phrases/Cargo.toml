@@ -1,0 +1,15 @@
+[package]
+
+name = "phrases"
+version = "0.0.1"
+authors = ["Leonids Maslovs <leonids.maslovs@galeoconsulting.com>"]
+
+[lib]
+
+name="phrases"
+path="src/lib.rs"
+
+[[bin]]
+
+name = "phrases"
+path = "src/main.rs"
