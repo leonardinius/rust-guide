@@ -1,16 +1,25 @@
+use std::rc::Rc;
+
+#[derive(Show)]
 struct Car {
     name : String,
 }
 
-struct Whhel {
+#[derive(Show)]
+struct Wheel<'a> {
     size : i32,
-    owner : Car,
+    owner : &'a Car,
 }
 
 fn main () {
-    let car = Car {name: "DeLorean".to_string() };
+    let car = Rc::new(Car {name: "DeLorean".to_string() });
+
+    let mut v : Vec<Wheel> = Vec::new();
 
     for _ in range(0, 4) {
-        Wheel { size : 360, owner : car };
+        let c = Wheel { size : 360, owner : &*car };
+        v.push(c);
     }
+
+    println!("{:?}", v);
 }
