@@ -17,9 +17,9 @@ fn main(){
         println!("x < {} = {}", q, x);
     }
 
-    let u = if x < 5u64 { 0i } else { 1i };
+    let u = if x < 5u64 { 0i32 } else { 1i32 };
     println!("u = {}", u);
 
-    let u1 = if x < 5u64 { 0i; } else { 1i; };
-    println!("u1 = {}", u1);
+    let u1 = if x < 5u64 { 0i32; } else { 1i32; };
+    println!("u1 = {:?}", u1);
 }
