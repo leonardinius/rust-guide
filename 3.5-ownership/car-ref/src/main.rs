@@ -1,11 +1,12 @@
+#![feature(core)]
 use std::rc::Rc;
 
-#[derive(Show)]
+#[derive(Debug)]
 struct Car {
     name : String,
 }
 
-#[derive(Show)]
+#[derive(Debug)]
 struct Wheel<'a> {
     size : i32,
     owner : &'a Car,
