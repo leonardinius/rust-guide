@@ -1,7 +1,8 @@
+#![feature(core)]
 fn main() {
     println!("Hello, world!");
 
-    #[derive(Show)]
+    #[derive(Debug)]
     struct Circle {
         x : f64,
         y : f64,
