@@ -1,7 +1,8 @@
+#![feature(core)]
 fn _10_1(){
     println!("guide 10-1");
 
-    for x  in range (0i, 10i){
+    for x in range (0i32, 10i32){
         println!("{}", x);
     }
 }
@@ -9,7 +10,7 @@ fn _10_1(){
 fn _10_2(){
     println!("guide 10-2");
 
-    let mut x = 5u;
+    let mut x = 5u64;
     let mut done = false;
 
     while !done {
@@ -23,7 +24,7 @@ fn _10_2(){
 fn _10_3(){
     println!("guide 10-3");
 
-    let mut x = 5u;
+    let mut x = 5u64;
     loop {
         x += x - 3;
         if x % 2 == 0 { continue; }
