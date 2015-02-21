@@ -1,7 +1,7 @@
 fn main() {
     println!("Hello, world!");
 
-    let x = 3i;
+    let x = 3i32;
 
     match x {
         1 => println!("one"),
@@ -21,21 +21,21 @@ fn main() {
     }
 
     {
-        let x = &5i;
+        let x = &5i32;
         match x {
             &val => println!("Got a value: {}", val),
         }
     }
 
     {
-        let x = 5i;
+        let x = 5i32;
         match x {
             ref r => println!("Got a reference to: {}", r),
         }
     }
 
     {
-        let mut x = 5i;
+        let mut x = 5i32;
         match x {
             ref mut mr => println!("Got a mutable reference to: {}", mr),
         }
