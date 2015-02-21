@@ -1,5 +1,8 @@
+use std::cmp::Ordering;
+use std::cmp::Ordering::{Less, Greater, Equal};
+
 enum OptionalInt {
-    Value(int),
+    Value(i32),
     Missing,
 }
 
@@ -19,7 +22,7 @@ fn _9_1(){
     }
 }
 
-fn cmp(a: int, b: int) -> Ordering {
+fn cmp(a: i32, b: i32) -> Ordering {
     if a < b { Less }
     else if a > b { Greater }
     else { Equal }
@@ -27,8 +30,8 @@ fn cmp(a: int, b: int) -> Ordering {
 
 fn _9_2(){
     println!("guide 9-2");
-    let x = 5i;
-    let y = 10i;
+    let x = 5i32;
+    let y = 10i32;
 
     println!("{}", match cmp(x, y) {
         Less    => "less",
