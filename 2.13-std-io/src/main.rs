@@ -1,4 +1,5 @@
-use std::io;
+#![feature(old_io)]
+use std::old_io as io;
 
 fn main() {
     println!("Type something!");
