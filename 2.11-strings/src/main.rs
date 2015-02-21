@@ -1,3 +1,4 @@
+#![feature(core)]
 fn takes_slice(slice: &str){
     println!("Got: {}", slice);
 }
@@ -5,7 +6,7 @@ fn takes_slice(slice: &str){
 fn compare(string : String){
     if string.as_slice() == "Hello" {
         println!("yes");
-    } 
+    }
     else {
         println!("no");
     }
@@ -13,8 +14,6 @@ fn compare(string : String){
 
 fn _11_1(){
     println!("guide 11-1");
-
-    let string = "Hello there.";
 
     let mut s = "Hello".to_string();
     println!("{}", s);
