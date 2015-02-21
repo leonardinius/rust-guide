@@ -1,16 +1,19 @@
 fn main(){
-    let mut x = 5i;
-    let z: int = 5i;
-    x = 6i;
-    println!("Hello, world = {:d}", x * z);
+    let mut x: i32;
+    let z: i32 = 5i32;
+    x = 632;
+    println!("Hello, world = {0}", x * z);
 
-    let (a,b) = (1i, 1.0f64 / 3.0f64 );
-    println!("a {:d} b {:f} {}", a, b, x);
+    let (a,b) = (1i32, 1.0f64 / 3.0f64 );
+    println!("a {a} {b} {x}", a=a, b=b, x=x);
 
-    if x == 7i {
+    if x == 732 {
         println!("x == 6 integer");
     }
 
-    let y: int = if x == 6i { 1i } else { 2i };
-    println!("y == {}", y);
+    let y: i32 = if x == 632 { 1i32 } else { 2i32 };
+    println!("y == x{0:X}", y);
+
+    let q = 5us;
+    println!("q {:08}", q);
 }
