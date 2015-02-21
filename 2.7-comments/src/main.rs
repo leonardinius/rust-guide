@@ -11,7 +11,7 @@
 ///
 /// * `n` - The non-negative number to calculate the factorial to
 ///
-/// # Example 
+/// # Example
 /// ```
 /// // example
 /// let n: u64 = 5u64;
@@ -46,5 +46,5 @@ fn main(){
     println!("u = {}", u);
 
     let u1 = if x < 5u64 { 0i; } else { 1i; };
-    println!("u1 = {}", u1);
+    println!("u1 = {:?}", u1);
 }
