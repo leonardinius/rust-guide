@@ -16,7 +16,7 @@
 /// // example
 /// let n: u64 = 5u64;
 /// let result: u64 = hello_world::factorial(n);
-/// println!("{}! = {}", n, result); // prints "5! = 120"
+/// println!("{}! = {}", n, result); // pri32s "5! = 120"
 /// ```
 pub fn factorial(n : u64) -> u64 {
     match n {
@@ -34,7 +34,7 @@ fn main(){
     // e.g. we format x as string with base 2 (binary)
     //   and use it's length to count bits in the number
     let y = format!("{:b}", x).len() as u64;
-    // nad now we print it
+    // nad now we pri32 it
     println!("factorial({}) = {} ({:b} / {})", o, x, x, y);
 
     let q = 15u64;
@@ -42,9 +42,9 @@ fn main(){
         println!("x < {} = {}", q, x);
     }
 
-    let u = if x < 5u64 { 0i } else { 1i };
+    let u = if x < 5u64 { 0i32 } else { 1i32 };
     println!("u = {}", u);
 
-    let u1 = if x < 5u64 { 0i; } else { 1i; };
+    let u1 = if x < 5u64 { 0i32; } else { 1i32; };
     println!("u1 = {:?}", u1);
 }
